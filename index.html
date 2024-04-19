@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basketball scoreboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3 class="name">HOME</h3>
+                <p class="points" id="home-points">0</p>
+                <button class="score-btn" onclick="add1Home()">+1</button>
+                <button class="score-btn" onclick="add2Home()">+2</button>
+                <button class="score-btn" onclick="add3Home()">+3</button>
+            </div>
+            <div>
+                <h3 class="name">GUEST</h3>
+                <p class="points" id="guest-points">0</p>
+                <button class="score-btn" onclick="add1Guest()">+1</button>
+                <button class="score-btn" onclick="add2Guest()">+2</button>
+                <button class="score-btn" onclick="add3Guest()">+3</button>
+            </div>
+        </div>
+        <button id="new-btn" onclick="newGame()">NEW GAME</button>
+        <script src="index.js"></script>
+    </body>
+</html>
